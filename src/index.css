@@ -1,0 +1,97 @@
+/* ? App Header */
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 26px;
+}
+
+/* ? customer properties */
+
+.create-cus {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.customer {
+  width: 70%;
+  background-color: #dddddd94;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 50px;
+  border-radius: 20px;
+}
+
+.customer > div {
+  display: flex;
+  gap: 10px;
+
+  input {
+    text-align: center;
+    padding: 2px;
+    border: none;
+    outline: 1px solid;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+
+.create-cus-btn {
+  width: 280px;
+  padding: 5px 0px;
+  border-radius: 30px;
+  border: none;
+  outline: 1px solid;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ? create bank properties */
+.create-account {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px 0px;
+  border-radius: 20px;
+}
+
+.account-op {
+  background-color: #dddddd94;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 40px;
+  border-radius: 20px;
+}
+
+.account-op > div {
+  display: flex;
+  gap: 15px;
+
+  input {
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+
+.deposit-btn,
+.withdraw-btn,
+.request-btn,
+.payloan-btn {
+  padding: 3px 30px;
+  border-radius: 20px;
+}
+
+:where(.deposit-btn, .withdraw-btn, .request-btn, .payloan-btn, .create-cus-btn):hover {
+  cursor: pointer;
+  background-color: #dddddde5;
+}
